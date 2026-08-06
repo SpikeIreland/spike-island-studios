@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Spike Island Studios — London venture studio building AI businesses',
   description:
     'Spike Island Studios is a London-based venture studio and AI incubator. We create AI-powered platforms, partner with world-class experts, and build businesses designed to last.',
-  metadataBase: new URL('https://spikeislandstudios.com'),
+  metadataBase: new URL('https://spikeisland.co'),
 };
 
 export default function RootLayout({ children }) {

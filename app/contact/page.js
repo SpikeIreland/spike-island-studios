@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 export default function Contact() {
-  const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hello@spikeislandstudios.com';
+  const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hello@spikeisland.co';
   return (
     <section className="section">
       <div className="wrap">
