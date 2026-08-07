@@ -14,6 +14,7 @@ export default function AuthorsLab() {
       oneLine="AI manuscript editing platform for writers and publishers."
       facts={[
         { k: 'Status', v: 'In Beta — live authors and manuscripts' },
+        { k: 'Sector', v: 'PublishingTech' },
         { k: 'Structure', v: 'Ltd company owned by Spike Island Studios' },
       ]}
       blocks={[

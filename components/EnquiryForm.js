@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function EnquiryForm({ venture }) {
+export default function EnquiryForm({ venture, showRole = false }) {
   const [status, setStatus] = useState(null);
   const [busy, setBusy] = useState(false);
 
@@ -20,7 +20,7 @@ export default function EnquiryForm({ venture }) {
       });
       const json = await res.json();
       if (json.ok) {
-        setStatus({ kind: 'ok', msg: 'Thank you — your enquiry has been sent. We read everything and reply personally.' });
+        setStatus({ kind: 'ok', msg: 'Thank you — your enquiry has been sent. We respond to all serious enquiries within 48 hours.' });
         form.reset();
       } else {
         setStatus({ kind: 'err', msg: json.error || 'Something went wrong. Please email us directly.' });
@@ -44,11 +44,17 @@ export default function EnquiryForm({ venture }) {
         <input id="email" name="email" type="email" required autoComplete="email" />
       </div>
       <div>
-        <label htmlFor="org">Organisation / fund (optional)</label>
+        <label htmlFor="org">Organisation / fund</label>
         <input id="org" name="org" autoComplete="organization" />
       </div>
+      {showRole && (
+        <div>
+          <label htmlFor="role">Role</label>
+          <input id="role" name="role" autoComplete="organization-title" />
+        </div>
+      )}
       <div>
-        <label htmlFor="message">Message / nature of interest</label>
+        <label htmlFor="message">Brief description of enquiry</label>
         <textarea id="message" name="message" required />
       </div>
       <div className="cta-row" style={{ marginTop: 4 }}>

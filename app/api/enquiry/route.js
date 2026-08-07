@@ -9,7 +9,7 @@ export async function POST(req) {
     return Response.json({ ok: false, error: 'Invalid request.' }, { status: 400 });
   }
 
-  const { name, email, org, message, venture } = body || {};
+  const { name, email, org, role, message, venture } = body || {};
   if (!name || !email || !message) {
     return Response.json({ ok: false, error: 'Please complete name, email and message.' }, { status: 400 });
   }
@@ -26,14 +26,15 @@ export async function POST(req) {
   }
 
   const subject = venture
-    ? `Investor enquiry — ${venture}`
+    ? `Enquiry — ${venture}`
     : 'Website enquiry — Spike Island Studios';
 
   const text = [
     `Name: ${name}`,
     `Email: ${email}`,
     org ? `Organisation / fund: ${org}` : null,
-    venture ? `Venture: ${venture}` : null,
+    role ? `Role: ${role}` : null,
+    venture ? `Regarding: ${venture}` : null,
     '',
     message,
   ]

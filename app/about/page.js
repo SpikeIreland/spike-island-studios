@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'About — Spike Island Studios',
   description:
-    'The founders and working philosophy of Spike Island Studios, a London-based venture studio building AI-powered businesses.',
+    'The founders and working philosophy of Spike Island Studios — practitioners who build AI platforms, and whose vetting judgement is grounded in that experience.',
 };
 
 export default function About() {
@@ -10,12 +10,14 @@ export default function About() {
       <section className="section">
         <div className="wrap">
           <p className="kicker">About</p>
-          <h1 style={{ maxWidth: '22ch' }}>Experienced hands, long views.</h1>
+          <h1 style={{ maxWidth: '24ch' }}>
+            Judgement you can trace to the workshop floor.
+          </h1>
           <p className="lede">
-            Spike Island Studios exists because building good companies with AI
-            takes more than good prompts. It takes judgement about what is worth
-            making, discipline in how it is made, and patience about how value
-            compounds.
+            Spike Island Studios doesn&rsquo;t just advise on AI — we build it.
+            The studio has developed AI systems across legal mediation,
+            manuscript editing and film production. That practitioner
+            experience is what makes our vetting judgement credible.
           </p>
         </div>
       </section>
@@ -28,33 +30,33 @@ export default function About() {
               <h3>Paul</h3>
               <p className="role">Co-founder</p>
               <p className="prose">
-                Twenty-plus years across film, television and music, with an
-                earlier career in heavy industry — control systems, production
-                lines, plants that had to run every day. Paul brings deep
-                industry relationships, production expertise, and an
+                Twenty-plus years in film, television and music, with a deep
+                understanding of creative industries and commercial
+                deal-making — and an earlier career in heavy industry: control
+                systems, production lines, plants that had to run every day.
+                Paul owns the studio&rsquo;s build discipline and brings an
                 engineer&rsquo;s conviction that quality is designed in, not
-                inspected in afterwards. He owns the studio&rsquo;s build
-                discipline and its ventures&rsquo; production systems.
+                inspected in afterwards.
               </p>
             </div>
             <div className="founder">
               <h3>Carl</h3>
               <p className="role">Co-founder</p>
               <p className="prose">
-                Published author and scriptwriter. Carl brings narrative
-                intelligence and creative rigour to every platform the studio
-                builds — the judgement about voice, audience and story that
-                determines whether a product is merely functional or genuinely
-                wanted. He keeps the ventures honest about the people they
-                serve.
+                Published author and scriptwriter. Carl brings narrative and
+                editorial intelligence to AI platform development — the
+                judgement about voice, audience and story that determines
+                whether a product is merely functional or genuinely wanted. He
+                keeps every evaluation honest about the people it serves.
               </p>
             </div>
           </div>
 
           <blockquote className="pull">
-            We started Spike Island Studios to prove a simple idea: AI rewards
-            the disciplines that built the modern world — not the shortcuts
-            that promise to replace them.
+            We believe most AI businesses are noise. A small number are
+            structurally sound, genuinely differentiated and worth backing. We
+            know the difference because we&rsquo;ve built in this space
+            ourselves.
             <span className="who">— Paul &amp; Carl</span>
           </blockquote>
         </div>
@@ -62,12 +64,15 @@ export default function About() {
 
       <section className="section">
         <div className="wrap">
-          <h2>How we work</h2>
+          <h2>The studio model</h2>
           <div className="prose">
             <p>
-              We identify a market opportunity, build an AI platform to serve
-              it, find the best person in that industry to lead it, and back
-              them. We take a long view.
+              We treat every venture — including our own — as a portfolio
+              company. Sweat equity and bootstrapping are the entry point: each
+              of our platforms was built without outside capital, earning its
+              way from idea to functioning product. That discipline informs how
+              we evaluate others. A business that cannot show its working
+              rarely survives ours.
             </p>
             <p>
               Our ventures are engineered on the studio&rsquo;s own
@@ -75,7 +80,8 @@ export default function About() {
               work, while instrumentation, quality gates and measured evidence —
               the disciplines of manufacturing — decide what ships. Every
               platform we build can show you its production line, not just its
-              product.
+              product. We look for the same evidence in every opportunity we
+              assess.
             </p>
           </div>
         </div>

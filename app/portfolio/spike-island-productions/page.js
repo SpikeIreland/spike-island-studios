@@ -14,6 +14,7 @@ export default function Productions() {
       oneLine="AI-assisted film and television production."
       facts={[
         { k: 'Status', v: 'In Development' },
+        { k: 'Sector', v: 'Film & TV' },
         { k: 'Structure', v: 'Ltd company owned by Spike Island Studios' },
         { k: 'Website', v: 'spikeisland.tv' },
       ]}

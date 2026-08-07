@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Portfolio — Spike Island Studios',
   description:
-    'The current Spike Island Studios portfolio: Clarence Legal, Authors Lab, and Spike Island Productions.',
+    'The companies Spike Island Studios has built and backed: Clarence Legal (LegalTech), Authors Lab (PublishingTech) and Spike Island Productions (Film & TV).',
 };
 
 export default function Portfolio() {
@@ -11,25 +11,32 @@ export default function Portfolio() {
     <section className="section">
       <div className="wrap">
         <p className="kicker">Portfolio</p>
-        <h1 style={{ maxWidth: '20ch' }}>Three ventures. One discipline.</h1>
+        <h1 style={{ maxWidth: '20ch' }}>Built and backed.</h1>
         <p className="lede">
-          Each venture is an independent brand with its own market, leadership
-          and momentum — built on the studio&rsquo;s shared production method.
+          These are the companies we have built and backed. Each one began as
+          an idea; each is now a functioning platform. We apply the same rigour
+          to evaluating external opportunities.
         </p>
 
         <div className="cards">
           <Link href="/portfolio/clarence-legal" className="card">
-            <span className="badge live">Live</span>
+            <div className="card-meta">
+              <span className="badge live">Live</span>
+              <span className="sector">LegalTech</span>
+            </div>
             <h3>Clarence Legal</h3>
             <p>
               AI-powered contract mediation for businesses and individuals.
-              Built with legal partner John Hayward.
+              Built in partnership with legal expert John Hayward.
             </p>
             <span className="go">View venture →</span>
           </Link>
 
           <Link href="/portfolio/authors-lab" className="card">
-            <span className="badge beta">In Beta</span>
+            <div className="card-meta">
+              <span className="badge beta">In Beta</span>
+              <span className="sector">PublishingTech</span>
+            </div>
             <h3>Authors Lab</h3>
             <p>
               AI manuscript editing platform for writers and publishers — from
@@ -39,7 +46,10 @@ export default function Portfolio() {
           </Link>
 
           <Link href="/portfolio/spike-island-productions" className="card">
-            <span className="badge dev">In Development</span>
+            <div className="card-meta">
+              <span className="badge dev">In Development</span>
+              <span className="sector">Film &amp; TV</span>
+            </div>
             <h3>Spike Island Productions</h3>
             <p>
               AI-assisted film and television production, drawing on two

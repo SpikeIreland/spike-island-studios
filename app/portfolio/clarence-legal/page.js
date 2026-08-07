@@ -14,6 +14,7 @@ export default function ClarenceLegal() {
       oneLine="AI-powered contract mediation for businesses and individuals."
       facts={[
         { k: 'Status', v: 'Live' },
+        { k: 'Sector', v: 'LegalTech' },
         { k: 'Legal partner', v: 'John Hayward' },
         { k: 'Structure', v: 'Three-way equal partnership' },
       ]}

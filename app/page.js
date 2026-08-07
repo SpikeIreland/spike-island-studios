@@ -5,18 +5,30 @@ export default function Home() {
     <>
       <section className="section" style={{ paddingTop: 120, paddingBottom: 120 }}>
         <div className="wrap">
-          <h1 className="fade">We build the AI businesses of tomorrow.</h1>
+          <h1 className="fade">
+            We help investment firms find the AI opportunities worth backing.
+          </h1>
           <p className="lede fade d1">
-            Spike Island Studios is a London-based venture studio. We create
-            AI-powered platforms, partner with world-class experts, and build
-            businesses designed to last. Quietly. Deliberately.
+            Spike Island Studios is a London-based AI venture studio and vetting
+            intermediary. We build AI platforms ourselves, which means we
+            understand the landscape from the inside.
           </p>
+          <div className="prose fade d1" style={{ marginTop: 22 }}>
+            <p>
+              We work with investment firms as a trusted partner — identifying,
+              evaluating and contextualising AI opportunities before they reach
+              the investment committee. Our team builds non-deterministic,
+              hybrid AI systems and has done so across the legal, publishing
+              and film &amp; television sectors. We know what is real and what
+              is hype, because we have built both sides of that line.
+            </p>
+          </div>
           <div className="cta-row fade d2">
             <Link href="/portfolio" className="btn primary">
               Our Portfolio
             </Link>
-            <Link href="/contact" className="btn">
-              Get in Touch
+            <Link href="/work-with-us" className="btn">
+              Work With Us
             </Link>
           </div>
         </div>

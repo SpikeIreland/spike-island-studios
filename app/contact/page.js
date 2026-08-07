@@ -23,6 +23,9 @@ export default function Contact() {
         <p className="small" style={{ marginTop: 8 }}>
           London, United Kingdom
         </p>
+        <p className="prose" style={{ marginTop: 18 }}>
+          We respond to all serious enquiries within 48 hours.
+        </p>
         <EnquiryForm venture="" />
       </div>
     </section>
