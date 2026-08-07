@@ -9,7 +9,7 @@ export const metadata = {
 export default function WorkWithUs() {
   return (
     <>
-      <section className="section">
+      <section className="section hero-lit">
         <div className="wrap">
           <p className="kicker">Work With Us</p>
           <h1>Partner with us.</h1>

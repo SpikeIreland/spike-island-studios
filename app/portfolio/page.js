@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Portfolio() {
   return (
-    <section className="section">
+    <section className="section hero-lit">
       <div className="wrap">
         <p className="kicker">Portfolio</p>
         <h1 style={{ maxWidth: '20ch' }}>Built and backed.</h1>

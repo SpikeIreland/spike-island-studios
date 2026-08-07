@@ -8,7 +8,7 @@ export const metadata = {
 export default function Contact() {
   const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hello@spikeisland.co';
   return (
-    <section className="section">
+    <section className="section hero-lit">
       <div className="wrap">
         <p className="kicker">Contact</p>
         <h1>Start a conversation.</h1>

@@ -12,7 +12,7 @@ export default function VenturePage({
 }) {
   return (
     <>
-      <section className="section">
+      <section className="section hero-lit">
         <div className="wrap">
           <p className="kicker">{kicker}</p>
           <span className={`badge ${statusClass}`}>{status}</span>

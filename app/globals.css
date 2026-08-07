@@ -1,13 +1,21 @@
 :root {
-  --bg: #101113;
-  --bg-raised: #16181b;
+  /* "Estuary" tinted base — SIS-DES-002, ratified 2026-08-07 */
+  --bg: #0e1415;
+  --bg-raised: #131b1c;
   --ink: #f2f0eb;
   --ink-2: #b9b5ac;
-  --ink-3: #7d7a73;
+  --ink-3: #7d7a73; /* AA-large only — captions/labels, never body copy */
   --accent: #b3934f;
-  --hairline: rgba(242, 240, 235, 0.10);
+  /* Prussian hairlines — decorative separators only */
+  --hairline: rgba(46, 82, 102, 0.65);
+  --hairline-soft: rgba(46, 82, 102, 0.40);
   --maxw: 1060px;
   --serif: 'Playfair Display Variable', Georgia, 'Times New Roman', serif;
+  /* Static gold light — one per page, hero only; zero motion */
+  --light-gold: radial-gradient(
+      ellipse 90% 70% at 50% -10%,
+      rgba(179, 147, 79, 0.10),
+      transparent 65%);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -45,6 +53,29 @@ main { min-height: 60vh; }
 .section + .section { border-top: 1px solid var(--hairline); }
 .section.tight { padding: 56px 0; }
 
+/* Film grain @3% — static SVG noise, no JS, no motion (SIS-DES-002).
+   Applied once via a fixed body-level overlay. */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 140px 140px;
+}
+
+/* Static gold light — hero/page-header only, one per page */
+.hero-lit { position: relative; }
+.hero-lit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: var(--light-gold);
+}
+.hero-lit > .wrap { position: relative; }
+
 .fade { opacity: 0; transform: translateY(6px); animation: fadeUp .7s ease forwards; }
 .fade.d1 { animation-delay: .08s; } .fade.d2 { animation-delay: .16s; } .fade.d3 { animation-delay: .24s; }
 @keyframes fadeUp { to { opacity: 1; transform: none; } }
@@ -76,7 +107,7 @@ p + p { margin-top: 14px; }
 /* Cards */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 34px; }
 .card {
-  display: block; background: var(--bg-raised); border: 1px solid var(--hairline);
+  display: block; background: var(--bg-raised); border: 1px solid var(--hairline-soft);
   border-radius: 10px; padding: 28px; transition: border-color .2s ease;
 }
 .card:hover { border-color: rgba(179, 147, 79, 0.55); }

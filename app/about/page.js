@@ -7,7 +7,7 @@ export const metadata = {
 export default function About() {
   return (
     <>
-      <section className="section">
+      <section className="section hero-lit">
         <div className="wrap">
           <p className="kicker">About</p>
           <h1 style={{ maxWidth: '24ch' }}>

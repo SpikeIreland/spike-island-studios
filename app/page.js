@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      <section className="section" style={{ paddingTop: 120, paddingBottom: 120 }}>
+      <section className="section hero-lit" style={{ paddingTop: 120, paddingBottom: 120 }}>
         <div className="wrap">
           <h1 className="fade">
             We help investment firms find the AI opportunities worth backing.

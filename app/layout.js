@@ -9,12 +9,34 @@ export const metadata = {
   description:
     'Spike Island Studios is a London-based AI venture studio and vetting intermediary. We help investment firms identify, evaluate and de-risk AI opportunities — because we build AI platforms ourselves.',
   metadataBase: new URL('https://spikeisland.co'),
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon-180.png',
+  },
+  manifest: '/site.webmanifest',
+  openGraph: {
+    title: 'Spike Island Studios — AI vetting partner for investment firms',
+    description:
+      'We help investment firms identify, evaluate and de-risk AI opportunities — because we build AI platforms ourselves.',
+    url: 'https://spikeisland.co',
+    siteName: 'Spike Island Studios',
+    type: 'website',
+    images: [{ url: '/og-card.png', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-card.png'],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <div className="grain-overlay" aria-hidden="true" />
         <header className="site-header">
           <div className="wrap">
             <Link href="/" className="wordmark">
