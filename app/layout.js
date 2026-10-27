@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
-  title: 'Spike Island Studios — AI vetting partner for investment firms',
+  title: 'Spike Island Studios — industrial-grade AI platforms',
   description:
-    'Spike Island Studios is a London-based AI venture studio and vetting intermediary. We help investment firms identify, evaluate and de-risk AI opportunities — because we build AI platforms ourselves.',
+    'Spike Island Studios is a London venture studio building AI platforms with the methods of heavy industry — instruments, gates and records that do not take the model\'s word for anything.',
   metadataBase: new URL('https://spikeisland.co'),
   icons: {
     icon: [
@@ -18,9 +18,9 @@ export const metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'Spike Island Studios — AI vetting partner for investment firms',
+    title: 'Spike Island Studios — industrial-grade AI platforms',
     description:
-      'We help investment firms identify, evaluate and de-risk AI opportunities — because we build AI platforms ourselves.',
+      'A London venture studio building AI platforms with the methods of heavy industry.',
     url: 'https://spikeisland.co',
     siteName: 'Spike Island Studios',
     type: 'website',

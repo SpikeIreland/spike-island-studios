@@ -3,7 +3,7 @@ import EnquiryForm from '@/components/EnquiryForm';
 export const metadata = {
   title: 'Work With Us — Spike Island Studios',
   description:
-    'Partner with Spike Island Studios. We work with investment firms as a trusted AI vetting partner, on a retained or project basis, bringing practitioner-level insight to every evaluation.',
+    'Partner with Spike Island Studios: commission the studio, partner with a venture, or talk to us about investment.',
 };
 
 export default function WorkWithUs() {
@@ -14,51 +14,51 @@ export default function WorkWithUs() {
           <p className="kicker">Work With Us</p>
           <h1>Partner with us.</h1>
           <p className="lede">
-            We bring practitioner-level insight to the question every investor
-            in AI faces: which of these opportunities is real?
+            We build industrial-grade AI platforms — and we work with the
+            publishers, firms and partners who want that discipline applied to
+            their world.
           </p>
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
-          <h2>Investment firms</h2>
+          <h2>Partners and clients</h2>
           <div className="prose">
             <p>
-              If you are an investment group looking for a trusted AI vetting
-              partner, we would welcome a conversation. We work on a retained
-              or project basis — identifying, evaluating and contextualising AI
-              opportunities before they reach your investment committee.
-            </p>
-            <p>
-              Because we build non-deterministic, hybrid AI systems ourselves,
-              our assessments are grounded in how these platforms are actually
-              made — architecture, production discipline and commercial
-              substance, not surface demos.
+              Our ventures are built with the industries they serve — a legal
+              platform with a qualified legal partner behind it, an editorial
+              platform shaped with working publishers. If your organisation
+              wants to work with one of our platforms, or wants the
+              studio&rsquo;s engineering discipline applied to a problem in
+              your domain, we would welcome the conversation.
             </p>
           </div>
-          <EnquiryForm venture="Investment partnership" showRole />
+          <EnquiryForm venture="Partnership" showRole />
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
-          <h2>AI companies</h2>
+          <h2>Investors</h2>
           <div className="prose">
             <p>
-              If you are building an AI business and are seeking investment, we
-              are building a pathway. Register your interest at{' '}
+              We build our ventures bootstrapped and sweat-equity first, and we
+              engage selectively with investors who understand what
+              industrial-grade AI is worth. Because we build these systems
+              ourselves, we also bring practitioner-level insight to evaluating
+              AI opportunities — a conversation we are happy to have on a
+              retained or project basis.
+            </p>
+            <p className="small" style={{ marginTop: 10 }}>
+              Enquiries: use the form above, or{' '}
               <a
-                href="mailto:hello@spikeisland.co?subject=AI%20company%20—%20register%20interest"
+                href="mailto:hello@spikeisland.co?subject=Investor%20enquiry"
                 style={{ color: 'var(--accent)' }}
               >
                 hello@spikeisland.co
-              </a>{' '}
-              and we will be in touch when the time is right.
-            </p>
-            <p className="small" style={{ marginTop: 10 }}>
-              This pathway opens once our first investment partnership is in
-              place.
+              </a>
+              .
             </p>
           </div>
         </div>

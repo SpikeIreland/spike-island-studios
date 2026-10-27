@@ -13,9 +13,9 @@ export default function Portfolio() {
         <p className="kicker">Portfolio</p>
         <h1 style={{ maxWidth: '20ch' }}>Built and backed.</h1>
         <p className="lede">
-          These are the companies we have built and backed. Each one began as
-          an idea; each is now a functioning platform. We apply the same rigour
-          to evaluating external opportunities.
+          Each venture is an independent brand with its own market, leadership
+          and momentum — built, bootstrapped and watched on the studio&rsquo;s
+          shared production method.
         </p>
 
         <div className="cards">

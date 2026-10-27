@@ -6,29 +6,30 @@ export default function Home() {
       <section className="section hero-lit" style={{ paddingTop: 120, paddingBottom: 120 }}>
         <div className="wrap">
           <h1 className="fade">
-            We help investment firms find the AI opportunities worth backing.
+            Enterprise&#8209;grade is a promise. Industrial&#8209;grade is a discipline.
           </h1>
           <p className="lede fade d1">
-            Spike Island Studios is a London-based AI venture studio and vetting
-            intermediary. We build AI platforms ourselves, which means we
-            understand the landscape from the inside.
+            Spike Island Studios is a London venture studio building AI
+            platforms with the methods of heavy industry — instruments, gates
+            and records that do not take the model&rsquo;s word for anything.
           </p>
           <div className="prose fade d1" style={{ marginTop: 22 }}>
             <p>
-              We work with investment firms as a trusted partner — identifying,
-              evaluating and contextualising AI opportunities before they reach
-              the investment committee. Our team builds non-deterministic,
-              hybrid AI systems and has done so across the legal, publishing
-              and film &amp; television sectors. We know what is real and what
-              is hype, because we have built both sides of that line.
+              The intelligence at the core of our platforms is probabilistic —
+              that is what lets it handle nuance, and what makes it
+              untrustworthy naked. Our answer is the one a plant engineer
+              gives: every claim backed by a named instrument, every output
+              through a quality gate, every record append-only. We are not
+              building systems that are never wrong. We are building systems
+              that are never wrong <em>silently</em>.
             </p>
           </div>
           <div className="cta-row fade d2">
             <Link href="/portfolio" className="btn primary">
-              Our Portfolio
+              Our Ventures
             </Link>
-            <Link href="/work-with-us" className="btn">
-              Work With Us
+            <Link href="/about" className="btn">
+              How We Build
             </Link>
           </div>
         </div>
@@ -45,8 +46,8 @@ export default function Home() {
             </Link>
             <Link href="/portfolio/authors-lab" className="card">
               <span className="badge beta">In Beta</span>
-              <h3>Authors Lab</h3>
-              <p>AI manuscript editing platform for writers and publishers.</p>
+              <h3>AuthorsLab</h3>
+              <p>The AI editorial platform for authors and publishers.</p>
               <span className="go">View venture →</span>
             </Link>
             <Link href="/portfolio/spike-island-productions" className="card">
